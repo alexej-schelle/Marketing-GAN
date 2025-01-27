@@ -66,3 +66,5 @@ if __name__ == "__main__":
     target_rows = 2500 # Change this value as needed
     
     generate_large_dataset(input_csv, output_csv, target_rows)
+
+# Input dataset has to be set at line 62. Generated output dataset is specified at line 64.
