@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 df = pd.read_csv("adidas_dataset_new.csv", delimiter=';', header=4)
-df
 df.info()
 
 df['Operating Margin'] = df['Operating Margin'].str.replace(',', '.')
@@ -20,7 +19,7 @@ df['Operating Profit'] = df['Total Sales'] * df['Operating Margin']
 df['Invoice Date'] = pd.to_datetime('1900-01-01') + pd.to_timedelta(df['Invoice Date'] - 2, unit='d')
 
 
-#Verteilung der Gesamtverkäufe
+# Verteilung der Gesamtverkäufe
 plt.figure(figsize=(8, 6))
 sns.histplot(df["Total Sales"], bins=10, kde=True, color="blue")
 plt.title("Verteilung der Gesamtverkäufe", fontsize=16)
@@ -30,7 +29,7 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.show()
 
-#Gesamtumsatz nach Regionen
+# Gesamtumsatz nach Regionen
 region_sales = df.groupby("Region")["Total Sales"].sum()
 
 plt.figure(figsize=(8, 6))
@@ -43,7 +42,7 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.show()
 
-#Gesamtumsatz nach Produktkategorie
+# Gesamtumsatz nach Produktkategorie
 product_sales = df.groupby("Product")["Total Sales"].sum()
 
 plt.figure(figsize=(8, 6))
