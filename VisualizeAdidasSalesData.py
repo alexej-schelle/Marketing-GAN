@@ -55,7 +55,7 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 plt.show()
 
-#One-Hot_Encoding
+# One-Hot_Encoding
 df = pd.get_dummies(df, columns=["Sales Method"], prefix="SalesMethod")
 df = pd.get_dummies(df, columns=["Retailer"], prefix="Retailer")
 df = pd.get_dummies(df, columns=["Product"], prefix="Product")
@@ -64,12 +64,12 @@ df = pd.get_dummies(df, columns=["Product"], prefix="Product")
 for column in ["Region", "State", "City"]:
     df[f"{column}_encoded"] = df[column].map(df[column].value_counts())
 
-#Input Frame
+# Input Frame
 
 X = df.drop(columns=['Retailer ID','Region','State','City','Units Sold','Total Sales','Operating Profit'])
 X.info()
 
-#Output Frame
+# Output Frame
 
 y = df[['Units Sold', 'Total Sales', 'Operating Profit']]
 y.info()
