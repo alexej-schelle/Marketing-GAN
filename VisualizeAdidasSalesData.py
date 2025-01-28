@@ -1,8 +1,8 @@
-###################################################################################################################
-#                                                                                                                 #
-#   Autor: Onurcan Cesmeci. Copyright : IU Internationale Hochschule GmbH, Juri-Gagarin-Ring 152, D-99084 Erfurt  #
-#                                                                                                                 #
-###################################################################################################################
+##########################################################################################################################################
+#                                                                                                                                        #
+#   Autor: Onurcan Cesmeci and Dr. Alexej Schelle. Copyright : IU Internationale Hochschule GmbH, Juri-Gagarin-Ring 152, D-99084 Erfurt  #
+#                                                                                                                                        #
+##########################################################################################################################################
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -18,7 +18,7 @@ df['Total Sales'] = df['Total Sales'].astype(float)
 df['Total Sales'] = df['Units Sold'] * df['Price per Unit']
 df['Operating Profit'] = df['Total Sales'] * df['Operating Margin']
 df['Invoice Date'] = pd.to_datetime('1900-01-01') + pd.to_timedelta(df['Invoice Date'] - 2, unit='d')
-df
+
 
 #Verteilung der Gesamtverkäufe
 plt.figure(figsize=(8, 6))
@@ -68,11 +68,9 @@ for column in ["Region", "State", "City"]:
 #Input Frame
 
 X = df.drop(columns=['Retailer ID','Region','State','City','Units Sold','Total Sales','Operating Profit'])
-X
 X.info()
 
 #Output Frame
 
 y = df[['Units Sold', 'Total Sales', 'Operating Profit']]
-y
 y.info()
