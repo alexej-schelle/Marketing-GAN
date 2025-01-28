@@ -1,3 +1,9 @@
+###################################################################################################################
+#                                                                                                                 #
+#   Autor: Onurcan Cesmeci. Copyright : IU Internationale Hochschule GmbH, Juri-Gagarin-Ring 152, D-99084 Erfurt  #
+#                                                                                                                 #
+###################################################################################################################
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
