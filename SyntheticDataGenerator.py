@@ -4,7 +4,8 @@
 #                                                                                                                                              #
 ################################################################################################################################################
 
-### Python Code
+### Generic Python Code developed in assistance with ChatGPT 3.5
+
 import pandas as pd
 import numpy as np
 from faker import Faker
