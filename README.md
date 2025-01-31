@@ -21,6 +21,7 @@ Ziel dieses Projektes, welches im Rahmen der Vorlesungsreihe 'Datenmodellierung 
 
     - Modellierung von Verkaufszahlen mit statistischer Gleichverteilung um die originalen Daten
     - Vorhersage von Verkaufszahlen für den Datensatz der Firma Adidas (CC0 1.0 Universal License)
+    - Vorhersage von Verkaufszahlen für den Datensatz der Firma Rossmann (CC0 1.0 Universal License)
     - Visualisierung von statistischen Kennzahlen und Korrelationen zum Datensatz der Firma Adidas (Quelle: siehe Kaggle.com)
     
 *********************************************************************************************************************
@@ -30,6 +31,7 @@ Ziel dieses Projektes, welches im Rahmen der Vorlesungsreihe 'Datenmodellierung 
 *********************************************************************************************************************
 
 - Onurcan Cesmeci
+- Hubert Sellmer
 - FH-Doz. Dr. Alexej Schelle
 
 *********************************************************************************************************************
