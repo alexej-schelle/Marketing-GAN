@@ -31,6 +31,7 @@ Ziel dieses Projektes, welches im Rahmen der Vorlesungsreihe 'Datenmodellierung 
 *********************************************************************************************************************
 
 - Onurcan Cesmeci
+- Elena Gardea Harder
 - Hubert Sellmer
 - FH-Doz. Dr. Alexej Schelle
 
