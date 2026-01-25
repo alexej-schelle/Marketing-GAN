@@ -197,5 +197,3 @@ Lesen Sie die Dokumentation in:
 * 🤖 **NLP Modell ChatGPT 3.5** 
 
 ---
-
-Ich kann das gerne für dich erledigen!
